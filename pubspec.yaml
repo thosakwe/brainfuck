@@ -1,0 +1,19 @@
+author: "Tobe O <thosakwe@gmail.com>"
+description: "Brainfuck -> Dart compiler."
+homepage: "https://github.com/thosakwe/brainfuck.git"
+name: "brainfuck"
+version: "1.0.0-dev"
+dependencies: 
+  args: "^0.13.7"
+  charcode: "^1.1.1"
+  code_builder: "1.0.0-alpha+7"
+  path: "^1.4.0"
+dev_dependencies: 
+  test: "^0.12.17"
+executables: 
+  bf: "bf"
+  bfc: "bfc"
+scripts:
+  build: gcc -o bin/brainfuck main.c
+  get: scripts run build
+  upgrade: scritps run build
